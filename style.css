@@ -60,6 +60,7 @@ nav i {
     width: 20px;
 }
 footer{
+    display: none;
     position: absolute;
     bottom: 0;
     background-color: var(--text-primary);
@@ -172,16 +173,34 @@ h1{
 
 .section2 ul{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 3em;
     margin-top: 2rem;
     align-items: center;
 }
 
-.section2 li{
+.section2 li:not(i){
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 4em;
+    width: 80%;
+    margin: auto;
+    background-color:hsla(0,0%,100%,.7);
+    height: 320px;
+    border-radius: 10px;
+}
+
+
+.section2 li h3{
+    position: absolute;
+    display: flex;
+    padding-top: 2em;
+    padding-left: 2em;
+    justify-content: left;
+}
+
+.section2 .features--art{
+    background-color: var(--text-primary);
     width: 50%;
 }
 
@@ -205,28 +224,62 @@ h1{
 
 /* icon  */
 
-.section2 i{
+.section2 i:not(.gg-timelapse){
+    position: relative;
+    top: -6.6em;
+    left: 12em;
     display: flex;
     justify-content: center;
     margin: auto;
-    zoom: 2;
+    zoom: 1;
 }
 
+.gg-timelapse{
+    position: relative;
+    top: -6.6em;
+    left: 16em;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    zoom: 1;
+}
 
 .section3{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 3rem;
+}
+
+.form--desc{
+    display: flex;
+    font-size: 24px;
+    justify-content: left;
+    padding-top: 3em;
+    width: 50%;
+    padding-left: 6em;
+}
+
+.form--block{
     margin: auto;
     background-color:hsla(0,0%,100%,.7);
     height: 320px;
-    width: 50%;
-}
-.section3 > form{
-    display: flex;
-    gap: 1em;
-    flex-direction: column;
-    font-family: var(--inter) !important;
+    width: 30%;
+    margin-bottom: 8em;
+    border-radius: 10px;
 }
 
-.section3 > form > input{
+.section3 form{
+    display: flex;
+    gap: 1em;
+    padding-top:3em;
+    flex-direction: column;
+    width: 100%;
+    font-family: var(--inter) !important;
+    
+}
+
+.section3 > .form--block > form > input{
     border: 3px solid #000;
     border-radius: 5px;
     height: 50px;
@@ -239,12 +292,35 @@ h1{
     padding: 0 6px;
     padding-left: 12px;
     margin: auto;
+    font-family: var(--inter) !important;
+    font-size: 14px !important;
 }
 
-.section3 > form > input:focus{
+.section3 > .form--block > form > input:focus{
         border: 3px solid #5551ff;
 }
 
-.section3 > form > input{
-    width: 50%;
+.section3 > .form--block > form > input{
+    width: 80%;
+}
+
+.section3 > .form--block > form > button{
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background: #000000;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 14px 24px 16px;
+    font-weight: 700;
+    line-height: 1;
+    width: 40%;
+    margin: auto;
+    transition: transform 200ms,background 200ms; 
+}
+
+
+.section3 > .form--block > form > button:hover{
+    transform: translateY(-2px);
 }
