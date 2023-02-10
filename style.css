@@ -151,6 +151,24 @@ h1{
     text-align: center;
 }
 
+.btn{
+    margin: auto;
+    margin-top: 1rem;
+    background-color: #000;
+    border: 1px solid #000;
+    border: 1px solid var(--black);
+    border-radius: 57px;
+    font-size: 18px;
+    padding: 20px;
+    width: 9em;
+}
+
+.btn > a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+}
+
 
 .section2 ul{
     display: flex;
@@ -192,4 +210,41 @@ h1{
     justify-content: center;
     margin: auto;
     zoom: 2;
+}
+
+
+.section3{
+    margin: auto;
+    background-color:hsla(0,0%,100%,.7);
+    height: 320px;
+    width: 50%;
+}
+.section3 > form{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    font-family: var(--inter) !important;
+}
+
+.section3 > form > input{
+    border: 3px solid #000;
+    border-radius: 5px;
+    height: 50px;
+    line-height: normal;
+    color: #282828;
+    width: 100%;
+    box-sizing: border-box;
+    user-select: auto;
+    font-size: 16px;
+    padding: 0 6px;
+    padding-left: 12px;
+    margin: auto;
+}
+
+.section3 > form > input:focus{
+        border: 3px solid #5551ff;
+}
+
+.section3 > form > input{
+    width: 50%;
 }
