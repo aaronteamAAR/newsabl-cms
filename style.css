@@ -3,6 +3,8 @@
 @import url("https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap");
 
 
+@import url('https://css.gg/browse.css');
+
 :root{
     --bg: #000;
     --text-primary: #1d1f21;
@@ -34,7 +36,6 @@ nav{
     margin-right: auto;
     padding-left: 2em;
     padding-top: 1em;
-    zoom: 0.8;
 }
 
 nav > ul{
@@ -148,7 +149,7 @@ h1{
     margin: auto;
     width: 80%;
     font-weight: var(--font-x);
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -179,7 +180,7 @@ h1{
     align-items: center;
 }
 
-.section2 li:not(i){
+.section2 * li{
     display: flex;
     flex-direction: row;
     gap: 4em;
@@ -187,9 +188,26 @@ h1{
     margin: auto;
     background-color:hsla(0,0%,100%,.7);
     height: 320px;
-    border-radius: 10px;
+    border-radius: 15px;
+}
+.twist-col:not(i){
+    display: flex !important;
+    flex-direction: row-reverse !important;
 }
 
+.twist-col h3{
+    position: absolute;
+    display: flex;
+    padding-top: 2em;
+    padding-left: 2em;
+    justify-content: left;
+    left: 35.8em;
+    font-weight: 700;
+}
+
+.twist-col .feature--txt{
+    left: -2em;
+}
 
 .section2 li h3{
     position: absolute;
@@ -197,11 +215,46 @@ h1{
     padding-top: 2em;
     padding-left: 2em;
     justify-content: left;
+    font-weight: 700;
+}
+
+.feature--txt{
+    position: relative;
+   top: 4em;
+   left: 2.5em;
+   font-size: 15px;
+   padding-top: 0.5rem;
+   font-weight: 600;
+   color: #494949;
+}
+
+
+.features--art-twist{
+    background-color: var(--text-primary);
+    width: 50%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .section2 .features--art{
     background-color: var(--text-primary);
     width: 50%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.section2 .features--art-twist > img{
+    display: flex;
+    margin-right: auto;
+    padding-left: 3em;
+    width: 360px;
+}
+
+.section2 .features--art > img{
+    display: flex;
+    margin-left: auto;
+    padding-right: 3em;
+    width: 360px;
 }
 
 .li_content{
@@ -227,7 +280,7 @@ h1{
 .section2 i:not(.gg-timelapse){
     position: relative;
     top: -6.6em;
-    left: 12em;
+    left: 25em;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -308,6 +361,7 @@ h1{
     display: inline-block;
     outline: 0;
     border: 0;
+    font-style: var(--inter);
     cursor: pointer;
     background: #000000;
     color: #FFFFFF;

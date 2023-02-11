@@ -28,33 +28,32 @@
             </span>
             <button class="btn"><a href="#features">Get early access</a></button>
           </div>
-          <div class="section2"
-          data-aos="fade-up"
-            data-aos-duration="1000">
+          <div class="section2">
             <section>
               <h2 id="features">Features of Newsabl</h2>
               <ul>
-                
+               
                 <li>
-                    <i class="gg-bookmark"></i>
                   <h3>Convenient and distraction-free reading</h3>
+                  <span data-aos="zoom-in" data-aos-duration="1000" class="feature--txt">With Newsabl, you'll be able to read the news without the added hassle of ads and other irrelevant information, making your reading experience more convenient and enjoyable.</span>
                  <div class="features--art">
-                    hey
+                    <img data-aos="slide-left" data-aos-duration="1000" src="./image/storage _ work from home, upload, archive, backup, data, database, online, cloud, transfer.png" alt="up-to-date" />
                  </div>
                 </li>
         
-                <li >
-                    <i class="gg-timelapse"></i>
+                <li class="twist-col">
+                    
                   <h3>Up-to-date and comprehensive news coverage</h3>
-                  <div class="features--art">
-                    hey
+                  <span  data-aos="zoom-in" data-aos-duration="1000" class="feature--txt">Our platform delivers only the most important news stories, so you can stay informed and in the know.</span>
+                  <div class="features--art-twist">
+                    <img data-aos="slide-right" data-aos-duration="1000" src="./image/tools _ time, clock, time management, deadline, woman, people, reminder.png" alt="up-to-date" />
                  </div>
                 </li>
-                <li>
-                    <i class="gg-git-fork"></i>
+                <li >
                   <h3>Reliable and trustworthy news source</h3>
+                  <span  data-aos="zoom-in" data-aos-duration="1000" class="feature--txt">Newsabl is committed to delivering accurate and unbiased news coverage, ensuring that you can trust the information you read on our platform.</span>
                   <div class="features--art">
-                    hey
+                    <img data-aos="slide-left" data-aos-duration="1000" src="./image/security _ shield, protection, safety, insurance, man, people.png" alt="up-to-date" />
                  </div>
                 </li>
               </ul>
@@ -91,6 +90,9 @@
         <span></span>
       </footer>
 </body>
+
+
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
@@ -127,7 +129,13 @@ function submitForm(e){
         setDoc(doc(db, "user", "information"), {
         name: name,
         email: email
-        });
+        })
+        .then(() =>{
+          console.log('added')
+        })
+        .catch((error) => {
+          console.log('not added')
+        })
 
 }
   </script>
