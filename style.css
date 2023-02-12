@@ -5,12 +5,12 @@
 
 @import url('https://css.gg/browse.css');
 
-:root{
+:root {
     --bg: #000;
     --text-primary: #1d1f21;
-    --inter:'Satoshi', sans-serif;
+    --inter: 'Satoshi', sans-serif;
     --silkscreen: 'Silkscreen', cursive;
-    --mono:'IBM Plex Mono', monospace;
+    --mono: 'IBM Plex Mono', monospace;
     --font-x: 400;
     --font-xl: 500;
     --font-xxl: 700;
@@ -19,18 +19,19 @@
 }
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: var(--background);
     font-family: var(--inter);
     font-weight: var(--font-xl);
 }
-nav{
+
+nav {
     display: flex;
     flex-direction: row;
     margin-right: auto;
@@ -38,12 +39,12 @@ nav{
     padding-top: 1em;
 }
 
-nav > ul{
+nav>ul {
     display: flex;
     gap: 0.5em;
 }
 
-nav a{
+nav a {
     display: flex;
     list-style: none;
     text-decoration: none;
@@ -51,10 +52,11 @@ nav a{
     align-items: center;
     gap: 1em;
 }
-nav > ul > li {
+
+nav>ul>li {
     list-style: none;
     width: 120px;
-    background-color:hsla(0,0%,100%,.7);
+    background-color: hsla(0, 0%, 100%, .7);
     border-radius: 17px;
     height: 34px;
     display: flex;
@@ -62,13 +64,14 @@ nav > ul > li {
     align-items: center;
     gap: 20px;
     font-size: 14px;
-    padding-left: 1px;   
+    padding-left: 1px;
 }
 
 nav i {
     width: 20px;
 }
-footer{
+
+footer {
     position: fixed;
     bottom: 0;
     background-color: var(--text-primary);
@@ -77,7 +80,7 @@ footer{
     margin-bottom: -7em;
 }
 
-footer > span{
+footer>span {
     margin-top: 3em;
     color: white;
     font-family: var(--mono);
@@ -86,7 +89,7 @@ footer > span{
     justify-content: center;
 }
 
-footer > p{
+footer>p {
     display: flex;
     justify-content: center;
     font-size: 9px;
@@ -95,10 +98,10 @@ footer > p{
     color: white;
 }
 
-footer > ul > li{
+footer>ul>li {
     list-style: none;
     width: 120px;
-    background-color:hsla(0,0%,100%,.7);
+    background-color: hsla(0, 0%, 100%, .7);
     border-radius: 17px;
     height: 34px;
     display: flex;
@@ -109,7 +112,7 @@ footer > ul > li{
     padding-left: 2px;
 }
 
-footer > ul{
+footer>ul {
     display: flex;
     justify-content: center;
     padding-top: 3em;
@@ -117,32 +120,32 @@ footer > ul{
 }
 
 
-h1{
+h1 {
     font-family: var(--silkscreen);
     font-size: 45px;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     padding: 0 12em 0 12em;
 }
 
-.section1{
+.section1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.section1 > h1{
+.section1>h1 {
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: flex;
     justify-content: center;
-   
+
 }
 
-.section1 > span:not(.part_1){
+.section1>span:not(.part_1) {
     display: flex;
     justify-content: center;
     font-size: 42px;
@@ -152,7 +155,7 @@ h1{
     text-align: center;
 }
 
-.part_1{
+.part_1 {
     margin: auto;
     width: 80%;
     font-weight: var(--font-x);
@@ -160,7 +163,7 @@ h1{
     text-align: center;
 }
 
-.btn{
+.btn {
     margin: auto;
     margin-top: 1rem;
     background-color: #000;
@@ -172,14 +175,14 @@ h1{
     width: 9em;
 }
 
-.btn > a{
+.btn>a {
     font-size: 14px;
     text-decoration: none;
     color: #fff;
 }
 
 
-.section2 ul{
+.section2 ul {
     display: flex;
     flex-direction: column;
     gap: 3em;
@@ -187,22 +190,23 @@ h1{
     align-items: center;
 }
 
-.section2 * li{
+.section2 * li {
     display: flex;
     flex-direction: row;
     gap: 4em;
     width: 80%;
     margin: auto;
-    background-color:hsla(0,0%,100%,.7);
+    background-color: hsla(0, 0%, 100%, .7);
     height: 320px;
     border-radius: 15px;
 }
-.twist-col:not(i){
+
+.twist-col:not(i) {
     display: flex !important;
     flex-direction: row-reverse !important;
 }
 
-.twist-col h3{
+.twist-col h3 {
     position: absolute;
     display: flex;
     padding-top: 2em;
@@ -212,11 +216,11 @@ h1{
     font-weight: 700;
 }
 
-.twist-col .feature--txt{
+.twist-col .feature--txt {
     left: -2em;
 }
 
-.section2 li h3{
+.section2 li h3 {
     position: absolute;
     display: flex;
     padding-top: 2em;
@@ -225,50 +229,50 @@ h1{
     font-weight: 700;
 }
 
-.feature--txt{
+.feature--txt {
     position: relative;
-   top: 4em;
-   left: 2.5em;
-   font-size: 15px;
-   padding-top: 0.5rem;
-   font-weight: 600;
-   color: #494949;
+    top: 4em;
+    left: 2.5em;
+    font-size: 15px;
+    padding-top: 0.5rem;
+    font-weight: 600;
+    color: #494949;
 }
 
 
-.features--art-twist{
+.features--art-twist {
     background-color: var(--text-primary);
     width: 50%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
 
-.section2 .features--art{
+.section2 .features--art {
     background-color: var(--text-primary);
     width: 50%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
-.section2 .features--art-twist > img{
+.section2 .features--art-twist>img {
     display: flex;
     margin-right: auto;
     padding-left: 3em;
     width: 360px;
 }
 
-.section2 .features--art > img{
+.section2 .features--art>img {
     display: flex;
     margin-left: auto;
     padding-right: 3em;
     width: 360px;
 }
 
-.li_content{
+.li_content {
     margin-top: -3em;
 }
 
-.section2 h2{
+.section2 h2 {
     display: flex;
     justify-content: center;
     font-size: 32px;
@@ -276,7 +280,7 @@ h1{
     margin-top: 1em;
 }
 
-.section2 h3{
+.section2 h3 {
     text-align: center;
 }
 
@@ -284,7 +288,7 @@ h1{
 
 /* icon  */
 
-.section2 i:not(.gg-timelapse){
+.section2 i:not(.gg-timelapse) {
     position: relative;
     top: -6.6em;
     left: 25em;
@@ -294,7 +298,7 @@ h1{
     zoom: 1;
 }
 
-.gg-timelapse{
+.gg-timelapse {
     position: relative;
     top: -6.6em;
     left: 16em;
@@ -304,14 +308,14 @@ h1{
     zoom: 1;
 }
 
-.section3{
+.section3 {
     display: flex;
     justify-content: center;
     align-items: baseline;
     margin-top: 3rem;
 }
 
-.form--desc{
+.form--desc {
     display: flex;
     font-size: 24px;
     justify-content: left;
@@ -320,26 +324,26 @@ h1{
     padding-left: 6em;
 }
 
-.form--block{
+.form--block {
     margin: auto;
-    background-color:hsla(0,0%,100%,.7);
+    background-color: hsla(0, 0%, 100%, .7);
     height: 320px;
     width: 30%;
     margin-bottom: 8em;
     border-radius: 10px;
 }
 
-.section3 form{
+.section3 form {
     display: flex;
     gap: 1em;
-    padding-top:3em;
+    padding-top: 3em;
     flex-direction: column;
     width: 100%;
     font-family: var(--inter) !important;
-    
+
 }
 
-.section3 > .form--block > form > input{
+.section3>.form--block>form>input {
     border: 3px solid #000;
     border-radius: 5px;
     height: 50px;
@@ -356,15 +360,15 @@ h1{
     font-size: 14px !important;
 }
 
-.section3 > .form--block > form > input:focus{
-        border: 3px solid #5551ff;
+.section3>.form--block>form>input:focus {
+    border: 3px solid #5551ff;
 }
 
-.section3 > .form--block > form > input{
+.section3>.form--block>form>input {
     width: 80%;
 }
 
-.section3 > .form--block > form > button{
+.section3>.form--block>form>button {
     display: inline-block;
     outline: 0;
     border: 0;
@@ -378,129 +382,128 @@ h1{
     line-height: 1;
     width: 40%;
     margin: auto;
-    transition: transform 200ms,background 200ms; 
+    transition: transform 200ms, background 200ms;
 }
 
 
-.section3 > .form--block > form > button:hover{
+.section3>.form--block>form>button:hover {
     transform: translateY(-2px);
 }
 
 
 
- /* mobile devices  */
+/* mobile devices  */
 
- @media screen and (max-width: 375px){
-    .container{
+@media screen and (max-width: 375px) {
+    .container {
         width: 100%;
         padding-right: 1em;
         padding-left: 1em;
     }
 
 
-.section2{
-    display: flex;
-    margin: auto;
+    .section2 {
+        display: flex;
+        margin: auto;
+    }
+
+    .section2 h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section2 * li {
+        zoom: 0.6;
+        width: 100%;
+    }
+
+
+    .twist-col h3 {
+        width: 50%;
+        text-align: left;
+        padding-right: 1.6em;
+        left: 16.5em;
+    }
+
+    .twist-col .feature--txt {
+        left: -1em;
+    }
+
+    .section2 li h3 {
+        font-size: 18px;
+        width: 50%;
+        text-align: left;
+        padding-left: 12px;
+    }
+
+    .feature--txt {
+        top: 6em;
+        left: 1em;
+    }
+
+
+    .section2 .features--art-twist>img {
+        padding-top: 2em;
+        margin-left: -3em;
+        width: 320px;
+    }
+
+    .section2 .features--art>img {
+        width: 320px;
+    }
+
+
+
+    .section3 form {
+        width: 100%;
+        font-family: var(--inter) !important;
+    }
+
+    .section3 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: normal;
+    }
+
+    .form--desc {
+        display: flex;
+        font-size: 21px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .form--desc h2 {
+        width: 150%;
+        margin-left: -3em;
+        margin-bottom: 2em;
+    }
+
+    .section3>.form--block {
+        width: 100%;
+    }
+
+    .section3>.form--block>form>input {
+        width: 80%;
+    }
+
+
+
+    .section1>span:not(.part_1) {
+        font-size: 21px;
+        text-align: center;
+    }
+
+    .part_1 {
+        margin: auto;
+        width: 80%;
+        font-weight: var(--font-x);
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .btn {
+        zoom: 0.8;
+    }
+
 }
-   
-.section2 * li{
-    zoom: 0.6;
-    width: 100%;
-}
-
-
-.twist-col h3{
-    width: 50%;
-    text-align: left;
-    padding-right: 1.6em;
-    left: 16.5em;
-}
-
-.twist-col .feature--txt{
-    left: -1em;
-}
-
-.section2 li h3{
-    font-size: 18px;
-    width: 50%;
-    text-align: left;
-    padding-left:12px;
-}
-
-.feature--txt{
-   top: 6em;
-   left: 1em;
-}
-
-
-.section2 .features--art-twist > img{
-   padding-top: 2em;
-    margin-left: -3em;
-    width: 320px;
-}
-
-.section2 .features--art > img{
-    width: 320px;
-}
-
-
-
-.section3 form{
-    display: flex;
-    gap: 1em;
-    padding-top:3em;
-    flex-direction: column;
-    width: 100%;
-    font-family: var(--inter) !important;
-    
-}
-
-.section3 > .form--block > form > input{
-    border: 3px solid #000;
-    border-radius: 5px;
-    height: 50px;
-    line-height: normal;
-    color: #282828;
-    width: 100%;
-    box-sizing: border-box;
-    user-select: auto;
-    font-size: 16px;
-    padding: 0 6px;
-    padding-left: 12px;
-    margin: auto;
-    font-family: var(--inter) !important;
-    font-size: 14px !important;
-}
-
-.section3 > .form--block > form > input:focus{
-        border: 3px solid #5551ff;
-}
-
-.section3 > .form--block > form > input{
-    width: 80%;
-}
-
-.section3 > .form--block > form > button{
-    display: inline-block;
-    outline: 0;
-    border: 0;
-    font-style: var(--inter);
-    cursor: pointer;
-    background: #000000;
-    color: #FFFFFF;
-    border-radius: 8px;
-    padding: 14px 24px 16px;
-    font-weight: 700;
-    line-height: 1;
-    width: 40%;
-    margin: auto;
-    transition: transform 200ms,background 200ms; 
-}
-
-
-.section3 > .form--block > form > button:hover{
-    transform: translateY(-2px);
-}
-
-
- }
