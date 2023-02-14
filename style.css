@@ -289,6 +289,10 @@ h1 {
 }
 
 
+#submitID{
+    font-family:var(--inter) ;
+}
+
 
 /* icon  */
 
@@ -458,6 +462,10 @@ h1 {
         text-align: center;
     }
 
+    .section2 li h3{
+        padding-right: 4em;
+    }
+
     .section2 * li {
         zoom: 0.7;
         width: 100%;
@@ -470,10 +478,9 @@ h1 {
     } */
 
     .twist-col h3 {
-        width: 50%;
-        text-align: left;
-        padding-right: 1.6em;
-        left: 16.5em;
+        padding-right: 2em;
+        text-align: center;
+        margin-left: -3em;
     }
 
     .twist-col .feature--txt {
@@ -525,8 +532,8 @@ h1 {
     }
 
     .form--desc h2 {
-        width: 150%;
-        margin-left: -3em;
+        width: 100%;
+        margin-left: -4em;
         margin-bottom: 2em;
     }
 
