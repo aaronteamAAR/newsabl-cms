@@ -7,3 +7,15 @@ open.addEventListener("click", function(){
     ul.classList.toggle("col-link")
     console.log("clicked")
 })
+
+
+let isOpen = false
+open.addEventListener("click", function(){
+    if(isOpen){
+        open.innerHTML = "&#9776;"
+    }
+    else{
+        open.innerHTML = "&#10005;"
+        isOpen = true
+    }
+})
