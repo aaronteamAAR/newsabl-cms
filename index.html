@@ -122,6 +122,7 @@
 
 
 <script src="app.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
@@ -131,7 +132,7 @@
 <script type="module">
 
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
-  import { getFirestore, setDoc, doc, collection } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js"
+  import { getFirestore, setDoc, doc, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js"
 
   const firebaseConfig = {
     apiKey: "AIzaSyDE0NA5Ku4dwssCzd-0qzINP1jxmPEDJHY",
@@ -145,7 +146,7 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
-
+  const userRef = collection(db, "emails")
 
   document.getElementById('form').addEventListener('submit', submitForm)
 
@@ -155,14 +156,27 @@
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
 
-    setDoc(doc(db, "user", "information"), {
-      name: name,
-      email: email
-    })
+    const data = {
+      email: email,
+      name: name
+    }
+
+    addDoc(userRef, data)
       .then(() => {
-        console.log('added')
+        swal({
+          title: "Good job!",
+          text: "You submitted your info !",
+          icon: "success",
+          button: "Thanks",
+})
       })
       .catch((error) => {
+        swal({
+          title: "Try again",
+          text: "Your info wasn't submitted!",
+          icon: "error",
+          button: "Try again!",
+})
         console.log('not added')
       })
 
